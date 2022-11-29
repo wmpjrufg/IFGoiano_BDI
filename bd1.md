@@ -4,7 +4,7 @@
 <h1>Projeto de banco de dados</h1>
 
 <p align = "justify">
-Segundo Date [1] um Sistema de Banco de Dados (SGBD) é basicamente apenas um sistema computadorizado de manutenção de registros que estão em certo grau relacionados. O Banco de Dados (BD), por si só, pode ser considerado como o equivalente eletrônico de um armário de arquivamento; ou seja, ele é um repositório ou recipiente para uma coleção de arquivos de dados computadorizados. Os usuários de um sistema podem realizar (ou melhor, solicitar que o sistema realize) diversas operações envolvendo tais arquivos.
+Segundo Date [1] um Sistema de Banco de Dados (SGBD) é basicamente apenas um sistema computadorizado de criação e manutenção de registros que estão em certo grau relacionados. O Banco de Dados (BD), por si só, pode ser considerado como o equivalente eletrônico de um armário de arquivamento; ou seja, ele é um repositório ou recipiente para uma coleção de arquivos de dados computadorizados (Dados e Meta-Dados). Os usuários de um sistema podem realizar (ou melhor, solicitar que o sistema realize) diversas operações envolvendo tais arquivos.
 
 Heuser [2] afirma que o banco de dados é uma das maneiras mais eficazes de controlar a redundância de dados visto que o mesmo permite o compartilhamento de dados entre usuários/programas. A Figura 01 apresenta um esquema abstrato de um banco de dados de produtos e o possível uso dessa informação:
 
@@ -36,27 +36,33 @@ Para construir um banco de dados é necessário avaliar níveis de abastração 
         <dd>Um modelo lógico é uma descrição de um banco de dados no nível de abstração visto pelo usuário do SGBD. Assim, o modelo lógico é dependente do tipo particular de SGBD que está sendo usado. Por exemplo em um SGBD relacional esse formato é o de tabelas.</dd>
 </dl>
 
-A Figura 02 apresenta um modelo de Entidade - Relacionamento (ER) onde a entidade normalmente é utilizado para indicar qualquer objeto distinguível que deve ser representado no Banco do Dados. Já o atributo é uma propriedade que ajuda a descrever este objeto do mundo real. O relacionamento explicita a associação entre duas ou mais entidades
+
+<h2>O modelo Entidade-Relacionamento</h2>
+<p align = "justify">
+A abordagem <b>ER</b> foi criada por Peter Chen em 1976. A Figura 02 apresenta um modelo de Entidade - Relacionamento (ER).
 
 <center><img src = "fig02.png"></center>
 <b>Figura 02.</b> Diagrama Entidade-Relacionamento.
 <br><br>
 
+O conceito ER é formado por:
+<dl>
+    <dt>Entidade</dt>
+        <dd><p align = "justify">Como dito anteriormente a entidade é o objeto o qual deseja-se representar, normalmente a entidade dará origem a uma tabela no banco de dados. A entidade é representada por um retângulo no modelo conceitual. Um exemplo de entidade seria o <b>carro</b>.</p></dd>
+    <dt>Relacionamento</dt>
+        <dd><p align = "justify">Além da descrição dos objetos que formam o banco de dados é necessário estabelecer a regra de associação entre estes objetos e para isso dá-se o nome de relacionamento. A regra de associação é representada por meio de um losango conforme modelo da Figura 03.</p></dd>
+</dl>
+
+Os 
+    <dt>Atributos</dt>
+        <dd><p align = "justify">Estes são denominados como as propriedades que descrevem uma entidade. Por exemplo atributos de um objeto <b>carro</b> poderiam ser: (a) Nº de chassi; (b) Cor, (c) Motor e quaisquer outros elementos que auxiliem ou sejam necessários na descrição de um carro para um determinado modelo de negócio. Os atributos podem ser representados por meio de cículo ou elipses no modelo conceitual. Os atributos tem algumas propriedades que vou discutir mais a frente.</p></dd>
+
+<center><img src = "fig03.png"></center>
+<b>Figura 02.</b> Diagrama Entidade-Relacionamento.
+<br><br>
+
 </p>
-
-<h2>Primeiros passos em Java</h2>
-<p align = "justify">O primeiros passos em Java serão dados empregando o compilador <i>online</i> <a href="https://www.jdoodle.com/online-java-compiler/" target="_blank">jdoodle</a>. <br><br>
-Nosso primeiro programa em Java será o tradicional <b>Hello, world!</b> ou <b>Olá Mundo!</b>.  <br><br>
-Todo programa Java começa com a palavra-chave <code><b>class</b></code> e um método principal denominado de <code><b>main</b></code>. Vejamos o exemplo da estrutura primária do algoritmo:</p>
-
-```java
-public class OlaMundo {
-	public static void main(String[] args){
-	    // Parte interna do algoritmo
-	}
-}
-```
-<p align = "justify">Veja que o programa Java utiliza-se das chaves <code>{ }</code> para denominar o trecho de início e fim de um algoritmo. Portanto para aplicar a impressão do termo <b>Olá Mundo!!!</b> vamos empregar o método <code>System.out.println</code>. Vejamos como fica a versão final do algoritmo (<code>arq1.java</code>):</p>
+<p align = "justify">Veja que o programa Java utiliza-se das chaves <code>{ }</code> para denominar o trecho de início e fim de um algoritmo. Porsdstanto para aplicar a impressão do termo <b>Olá Mundo!!!</b> vamos empregar o método <code>System.out.println</code>. Vejamos como fica a versão final do algoritmo (<code>arq1.java</code>):</p>
 
 ```java
 public class Arq1 {
