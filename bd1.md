@@ -1,10 +1,47 @@
 <script src = "https://polyfill.io/v3/polyfill.min.js?features=es6"></script>
 <script id = "MathJax-script" async src = "https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js"></script>
 
-<h1>A linguagem Java</h1>
+<h1>Projeto de banco de dados</h1>
 
-<p align = "justify">A linguagem Java surgiu no começo dos anos 90 sendo está a criação de um programador chamado <a href="https://pt.wikipedia.org/wiki/James_Gosling" target="_blank">James Gosling</a> <a href="#1">[1]</a>. O objetivo inicial da linguagem de programação (ainda chamada de Oak essa época) era resolver os problemas de dispositivos eletrônicos que necessitavam de uma certa automação para seu funcionamento. A grande questão até o presente momento da história é de que estes dispositivos funcionavam com linguagens de programação própria para cada dispositivo tal situação dificuldade a fabricação destes vistos o grande <i>boom</i> do mercado de eletrônicos alavancados pelo surgimento da internet e dos computadores pessoais. <br><br>
-Uma das grandes evoluções trazidas pela linguagem Java foi a criação da <b>Máquina Virtual Java</b> (<i>Java Virtual Machine</i>) que permitiu que o mesmo código fonte pudesse ser executado em diversos sistemas operacionais, ou seja, independente do sistema operacional.
+<p align = "justify">
+Segundo Date [1] um Sistema de Banco de Dados (SGBD) é basicamente apenas um sistema computadorizado de manutenção de registros que estão em certo grau relacionados. O Banco de Dados (BD), por si só, pode ser considerado como o equivalente eletrônico de um armário de arquivamento; ou seja, ele é um repositório ou recipiente para uma coleção de arquivos de dados computadorizados. Os usuários de um sistema podem realizar (ou melhor, solicitar que o sistema realize) diversas operações envolvendo tais arquivos.
+
+Heuser [2] afirma que o banco de dados é uma das maneiras mais eficazes de controlar a redundância de dados visto que o mesmo permite o compartilhamento de dados entre usuários/programas. A Figura 01 apresenta um esquema abstrato de um banco de dados de produtos e o possível uso dessa informação:
+
+<center><img src = "fig01.png"></center>
+<b>Figura 01.</b> Exemplo de um modelo abstrato de banco de dados.
+<br><br>
+
+Elmarsi e Navathe [3] afirmam que uma banco de dados possui algumas questões relevantes como por exemplo:
+<ul>
+    <li>Natureza autodescritiva dos dados;</li>
+    <li>Isolamento entre dados e programa;</li>
+    <li>Suporte para múltiplas visualizações dos dados;</li>
+    <li>Compartilhamento e acesso simultâneo aos dados.</li>
+</ul>
+
+Elmarsi e Navathe [3] afirmam que há situações em que não é necessário o uso de um banco de dados, são elas:
+<ul>
+    <li>Investimentos iniciais altos em hardware, software e treinamento. ;</li>
+    <li>O banco de dados e suas aplicações são simples, bem definidas e sem previsão de mudanças;</li>
+    <li> acesso de múltiplos usuários aos dados não é necessário.</li>
+</ul>
+
+Para construir um banco de dados é necessário avaliar níveis de abastração dos dados para projetar um banco de dados. Esses níveis de abastração permitirão que possamos estruturas estes dados e que eles possam ser salvos de maniera integra. São modelos:
+
+<dl>
+    <dt>Modelo conceitual</dt>
+        <dd>Registra quais dados podem aparecer no BD porém não registra como estes dados estão armazenados a nível de SGBD. A forma mais difundida deste tipo de modelagem é o sistema Entidade - Relacionamento (ER).</dd>
+    <dt>Modelo lógico</dt>
+        <dd>Um modelo lógico é uma descrição de um banco de dados no nível de abstração visto pelo usuário do SGBD. Assim, o modelo lógico é dependente do tipo particular de SGBD que está sendo usado. Por exemplo em um SGBD relacional esse formato é o de tabelas.</dd>
+</dl>
+
+A Figura 02 apresenta um modelo de Entidade - Relacionamento (ER) onde a entidade normalmente é utilizado para indicar qualquer objeto distinguível que deve ser representado no Banco do Dados. Já o atributo é uma propriedade que ajuda a descrever este objeto do mundo real. O relacionamento explicita a associação entre duas ou mais entidades
+
+<center><img src = "fig02.png"></center>
+<b>Figura 02.</b> Diagrama Entidade-Relacionamento.
+<br><br>
+
 </p>
 
 <h2>Primeiros passos em Java</h2>
