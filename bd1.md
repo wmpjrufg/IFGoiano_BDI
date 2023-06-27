@@ -4,6 +4,8 @@
 <h1>Projeto de banco de dados</h1>
 
 <p align = "justify">
+Vamos começar o nosso texto definindo um dado. Dado é um valor discreto 
+
 Segundo Date [1] um Sistema de Banco de Dados (SGBD) é basicamente apenas um sistema computadorizado de criação e manutenção de registros que estão em certo grau relacionados. O Banco de Dados (BD), por si só, pode ser considerado como o equivalente eletrônico de um armário de arquivamento; ou seja, ele é um repositório ou recipiente para uma coleção de arquivos de dados computadorizados (Dados e Meta-Dados). Os usuários de um sistema podem realizar (ou melhor, solicitar que o sistema realize) diversas operações envolvendo tais arquivos.
 
 Heuser [2] afirma que o banco de dados é uma das maneiras mais eficazes de controlar a redundância de dados visto que o mesmo permite o compartilhamento de dados entre usuários/programas. A Figura 01 apresenta um esquema abstrato de um banco de dados de produtos e o possível uso dessa informação:
@@ -46,6 +48,7 @@ A abordagem <b>ER</b> foi criada por Peter Chen em 1976. A Figura 02 apresenta u
 <br><br>
 
 O conceito ER é formado por:
+
 <dl>
     <dt>Entidade</dt>
         <dd><p align = "justify">Como dito anteriormente a entidade é o objeto o qual deseja-se representar, normalmente a entidade dará origem a uma tabela no banco de dados. A entidade é representada por um retângulo no modelo conceitual. Um exemplo de entidade seria o <b>carro</b>.</p></dd>
@@ -53,9 +56,8 @@ O conceito ER é formado por:
         <dd><p align = "justify">Além da descrição dos objetos que formam o banco de dados é necessário estabelecer a regra de associação entre estes objetos e para isso dá-se o nome de relacionamento. A regra de associação é representada por meio de um losango conforme modelo da Figura 03.</p></dd>
 </dl>
 
-Os 
-    <dt>Atributos</dt>
-        <dd><p align = "justify">Estes são denominados como as propriedades que descrevem uma entidade. Por exemplo atributos de um objeto <b>carro</b> poderiam ser: (a) Nº de chassi; (b) Cor, (c) Motor e quaisquer outros elementos que auxiliem ou sejam necessários na descrição de um carro para um determinado modelo de negócio. Os atributos podem ser representados por meio de cículo ou elipses no modelo conceitual. Os atributos tem algumas propriedades que vou discutir mais a frente.</p></dd>
+As entidades posssuem propriedades e a estas propriedades é dado o nome de atributos. Por exemplo atributos de um objeto <b>carro</b> poderiam ser: (a) Nº de chassi; (b) Cor, (c) Motor e quaisquer outros elementos que auxiliem ou sejam necessários na descrição de um carro para um determinado modelo de negócio. Os atributos podem ser representados por meio de círculo ou elipses no modelo conceitual.<br>
+
 
 <center><img src = "fig03.png"></center>
 <b>Figura 02.</b> Diagrama Entidade-Relacionamento.
